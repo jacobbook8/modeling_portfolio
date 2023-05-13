@@ -6,6 +6,76 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     /* CSS styles */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #192C4E;
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    #hero {
+      background-image: url("misc/headshot.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    #about,
+    #projects,
+    #contact {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile-img {
+      max-width: 300px;
+      border-radius: 50%;
+      margin: 20px auto;
+    }
+
+    .college-logo {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
@@ -22,16 +92,17 @@
   <section id="hero">
     <div class="hero-content">
       <h1>Welcome to My Portfolio</h1>
-      <p>I am a data analyst showcasing my work.</p>
+      <p class="subtitle">Data Analyst &amp; Sports Enthusiast</p>
     </div>
   </section>
 
   <section id="about">
     <div class="section-content">
       <h2>About Me</h2>
-      <p>I am studying mathematics with statistics at Wheaton College. I also have a passion for sports and the utility of sports analytics. As a data analyst, I utilize my expertise to extract meaningful insights from data and develop predictive models.</p>
-      <p>Throughout my academic journey at Wheaton College, I have gained a strong foundation in mathematical principles and statistical techniques. I have honed my skills in data analysis, hypothesis testing, regression modeling, and more.</p>
+      <p>I am a mathematics major with a focus on statistics at Wheaton College. I have a strong passion for sports and the power of data analytics. As a data analyst, I utilize my expertise to extract valuable insights from data and develop predictive models.</p>
+      <p>Throughout my academic journey at Wheaton College, I have acquired a solid foundation in mathematical principles and statistical techniques. I possess advanced skills in data analysis, hypothesis testing, regression modeling, and more.</p>
       <p>My goal is to leverage statistical modeling to drive informed decision-making in the field of sports analytics, combining my passion for sports with the power of data-driven insights.</p>
+      <img src="misc/profile.jpg" alt="Profile Picture" class="profile-img">
     </div>
   </section>
 
@@ -39,23 +110,6 @@
     <div class="section-content">
       <h2>Projects</h2>
       <p>Explore my notable projects below:</p>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="btn">View Projects</a>
     </div>
-  </section>
-
-  <section id="contact">
-    <div class="section-content">
-      <h2>Contact Me</h2>
-      <p>If you have any questions, collaboration opportunities, or inquiries, feel free to reach out to me.</p>
-      <p>Email: jacobmbook02@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/jacob-book">Jacob Book</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 Jacob Book. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-
-
+ 
