@@ -4,168 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jacob Book's Portfolio</title>
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f8f9fa;
-      overflow-x: hidden;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Header Styles */
-    header {
-      background: linear-gradient(to right, #4c3a6b, #232526);
-      color: #fff;
-      text-align: center;
-      padding: 50px 0;
-      border-radius: 0 0 20px 20px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 24px;
-      margin-bottom: 0;
-    }
-
-    /* Navigation Styles */
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 10px;
-    }
-
-    .btn {
-      padding: 10px 20px;
-      background-color: transparent;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    /* Section Styles */
-    section {
-      padding: 40px;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      background: linear-gradient(to right bottom, #dcdde1, #ffffff);
-      animation: slideIn 1s ease;
-    }
-
-    @keyframes slideIn {
-      0% {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    section h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    section p {
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    /* Project Links Styles */
-    .project-links {
-      list-style: none;
-      padding: 0;
-    }
-
-    .project-links li {
-      margin-bottom: 10px;
-    }
-
-    .project-links li a {
-      color: #007bff;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .project-links li a:hover {
-      color: #0056b3;
-    }
-
-    /* Contact Styles */
-    .contact-info p {
-      margin: 10px 0;
-    }
-
-    /* Profile Picture Styles */
-    .profile-picture {
-      display: block;
-      margin: 0 auto;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-      animation: rotate 3s linear infinite;
-    }
-
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1S1Pml7nL9AmEtH9fvz2NOyjZoKBZKx7BQX5yT+Y0f75iBvXBkSGLZp8fOIyZhCk5Mg5Yc3IcCcnQfeX2OJF4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
     <div class="container">
       <img class="profile-picture" src="assets/headshot.jpg" alt="Profile Picture">
-      <h1>Jacob Book</h1>
-      <p>Data Analyst</p>
+      <div class="header-content">
+        <h1>Jacob Book</h1>
+        <p>Data Analyst</p>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work-history">Work History</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <div class="container">
-    <nav>
-      <ul>
-        <li><a class="btn" href="#about">About Me</a></li>
-        <li><a class="btn" href="#education">Education</a></li>
-        <li><a class="btn" href="#work-history">Work History</a></li>
-        <li><a class="btn" href="#projects">Projects</a></li>
-        <li><a class="btn" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
     <section id="about">
       <h2>About Me</h2>
       <p>I am a mathematics major with a focus on statistics at Wheaton College. I have a strong passion for sports and the power of data analytics. As a data analyst, I utilize my expertise to extract valuable insights from data and develop predictive models.</p>
@@ -205,5 +67,18 @@
       </div>
     </section>
   </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Jacob Book's Portfolio. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
