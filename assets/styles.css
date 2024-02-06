@@ -78,4 +78,70 @@ nav ul li a:hover {
 section {
   padding: 40px;
   margin: 40px 0;
-  border-radius: 10px
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right bottom, #dcdde1, #ffffff);
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Project Links Styles */
+.project-links {
+  list-style: none;
+  padding: 0;
+}
+
+.project-links li {
+  margin-bottom: 10px;
+}
+
+.project-links li a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.project-links li a:hover {
+  color: #0056b3;
+}
+
+/* Contact Styles */
+.contact-info p {
+  margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+  background: #4c3a6b;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 20px 20px 0 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons .icon {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.social-icons .icon:hover {
+  color: #dcdde1;
+}
