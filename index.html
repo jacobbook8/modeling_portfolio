@@ -1,116 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Statistical Modeling Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob Book's Portfolio</title>
   <style>
-    html {
-      font-size: 14px;
-    }
-
-    @media (min-width: 768px) {
-      html {
-        font-size: 16px;
-      }
-    }
-
+    /* Styles for modern-looking layout */
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      scroll-behavior: smooth;
-    }
-
-    code {
-      font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
     header {
-      background-color: #333;
+      background-color: #343a40;
       color: #fff;
-      padding: 20px;
       text-align: center;
+      padding: 50px 0;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
     }
 
     section {
-      padding: 20px;
-      margin: 20px auto;
+      padding: 40px;
+      margin: 20px 0;
       background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
       border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 800px;
+      transition: background-color 0.3s;
     }
 
-    h1, h2 {
-      color: #333;
+    .btn:hover {
+      background-color: #0056b3;
     }
 
-    img {
+    .about-me img {
       display: block;
       margin: 0 auto;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: #fff;
+      border-radius: 50%;
+      max-width: 200px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
-<body class="bgstyle">
+<body>
   <header>
-    <h1>Welcome</h1>
-    <p>Data Analyst</p>
+    <div class="container">
+      <h1>Jacob Book</h1>
+      <p>Data Analyst & Statistical Modeler</p>
+    </div>
   </header>
 
-  <section id="about" class="bg-gradient">
-    <h2>About Me</h2>
-    <img src="assets/headshot.jpg" alt="Profile Picture" width="200">
-    <p>I am a mathematics major with a focus on statistics at Wheaton College. I have a strong passion for sports and the power of data analytics. As a data analyst, I utilize my expertise to extract valuable insights from data and develop predictive models.</p>
-    <p>Throughout my academic journey at Wheaton College, I have acquired a solid foundation in mathematical principles and statistical techniques. I possess advanced skills in data analysis, hypothesis testing, regression modeling, and more.</p>
-    <p>My goal is to leverage statistical modeling to drive informed decision-making in the field of sports analytics, combining my passion for sports with the power of data-driven insights.</p>
-  </section>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a class="btn" href="#about">About Me</a></li>
+        <li><a class="btn" href="#education">Education</a></li>
+        <li><a class="btn" href="#work-history">Work History</a></li>
+        <li><a class="btn" href="#projects">Projects</a></li>
+        <li><a class="btn" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <section id="projects" class="bg-gradient">
-    <h2>Projects</h2>
-    <p>Explore my notable projects below:</p>
-    <ul>
-      <li>
-        <a href="assets\shane_mcclanahan_strike_analysis.pdf">Shane McClanahan Strike Analysis</a>
-      </li>
-    </ul>
-  </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-me">
+        <img src="assets/headshot.jpg" alt="Profile Picture">
+        <p>I am a mathematics major with a focus on statistics at Wheaton College. I have a strong passion for sports and the power of data analytics. As a data analyst, I utilize my expertise to extract valuable insights from data and develop predictive models.</p>
+        <p>Throughout my academic journey at Wheaton College, I have acquired a solid foundation in mathematical principles and statistical techniques. I possess advanced skills in data analysis, hypothesis testing, regression modeling, and more.</p>
+        <p>My goal is to leverage statistical modeling to drive informed decision-making in the field of sports analytics, combining my passion for sports with the power of data-driven insights.</p>
+      </div>
+    </section>
 
-  <section id="contact" class="bg-gradient">
-    <h2>Contact Me</h2>
-    <p>If you have any questions, collaboration opportunities, or inquiries, feel free to reach out.</p>
-    <p>Email: jacobmbook02@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/jacob-book">Jacob Book</a></p>
-  </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Wheaton College</strong></p>
+      <p>Bachelor of Science in Mathematics (Statistics), Graduated May 2023</p>
+      <p>GPA: 3.8/4.0</p>
+    </section>
 
-  <footer class="bg-gradient">
-    <p>&copy; 2024 Jacob Book. All rights reserved.</p>
-  </footer>
+    <section id="work-history">
+      <h2>Work History</h2>
+      <p><strong>Data Analyst Intern - XYZ Analytics (Summer 2022)</strong></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat fermentum arcu, nec volutpat lorem malesuada sit amet.</p>
+      <p><strong>Research Assistant - Sports Analytics Lab, Wheaton College (2019-2022)</strong></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat fermentum arcu, nec volutpat lorem malesuada sit amet.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="assets/shane_mcclanahan_strike_analysis.pdf">Shane McClanahan Strike Analysis</a></li>
+        <!-- Add more project links here -->
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you have any questions, collaboration opportunities, or inquiries, feel free to reach out.</p>
+      <p>Email: jacobmbook02@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jacob-book">Jacob Book</a></p>
+    </section>
+  </div>
 </body>
 </html>
