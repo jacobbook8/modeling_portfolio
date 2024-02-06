@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jacob Book's Portfolio</title>
   <style>
-    /* Styles for modern-looking layout */
+    /* General Styles */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
       background-color: #f8f9fa;
+      overflow-x: hidden;
     }
 
     .container {
@@ -20,31 +21,40 @@
       padding: 20px;
     }
 
+    /* Header Styles */
     header {
-      background-color: #343a40;
+      background: linear-gradient(to right, #4c3a6b, #232526);
       color: #fff;
       text-align: center;
       padding: 50px 0;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
 
-    h1 {
-      font-size: 36px;
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
 
-    p {
-      font-size: 18px;
+    header p {
+      font-size: 24px;
+      margin-bottom: 0;
     }
 
-    section {
-      padding: 40px;
+    /* Navigation Styles */
+    nav ul {
+      list-style: none;
+      padding: 0;
       margin: 20px 0;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
     }
 
     .btn {
-      display: inline-block;
       padding: 10px 20px;
       background-color: #007bff;
       color: #fff;
@@ -57,12 +67,48 @@
       background-color: #0056b3;
     }
 
-    .about-me img {
-      display: block;
-      margin: 0 auto;
-      border-radius: 50%;
-      max-width: 200px;
+    /* Section Styles */
+    section {
+      padding: 40px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to right bottom, #dcdde1, #ffffff);
+    }
+
+    section h2 {
+      font-size: 36px;
       margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* Project Links Styles */
+    .project-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-links li {
+      margin-bottom: 10px;
+    }
+
+    .project-links li a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .project-links li a:hover {
+      color: #0056b3;
+    }
+
+    /* Contact Styles */
+    .contact-info p {
+      margin: 10px 0;
     }
   </style>
 </head>
@@ -87,12 +133,9 @@
 
     <section id="about">
       <h2>About Me</h2>
-      <div class="about-me">
-        <img src="assets/headshot.jpg" alt="Profile Picture">
-        <p>I am a mathematics major with a focus on statistics at Wheaton College. I have a strong passion for sports and the power of data analytics. As a data analyst, I utilize my expertise to extract valuable insights from data and develop predictive models.</p>
-        <p>Throughout my academic journey at Wheaton College, I have acquired a solid foundation in mathematical principles and statistical techniques. I possess advanced skills in data analysis, hypothesis testing, regression modeling, and more.</p>
-        <p>My goal is to leverage statistical modeling to drive informed decision-making in the field of sports analytics, combining my passion for sports with the power of data-driven insights.</p>
-      </div>
+      <p>I am a mathematics major with a focus on statistics at Wheaton College. I have a strong passion for sports and the power of data analytics. As a data analyst, I utilize my expertise to extract valuable insights from data and develop predictive models.</p>
+      <p>Throughout my academic journey at Wheaton College, I have acquired a solid foundation in mathematical principles and statistical techniques. I possess advanced skills in data analysis, hypothesis testing, regression modeling, and more.</p>
+      <p>My goal is to leverage statistical modeling to drive informed decision-making in the field of sports analytics, combining my passion for sports with the power of data-driven insights.</p>
     </section>
 
     <section id="education">
@@ -112,7 +155,7 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
+      <ul class="project-links">
         <li><a href="assets/shane_mcclanahan_strike_analysis.pdf">Shane McClanahan Strike Analysis</a></li>
         <!-- Add more project links here -->
       </ul>
@@ -120,9 +163,11 @@
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>If you have any questions, collaboration opportunities, or inquiries, feel free to reach out.</p>
-      <p>Email: jacobmbook02@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/jacob-book">Jacob Book</a></p>
+      <div class="contact-info">
+        <p>If you have any questions, collaboration opportunities, or inquiries, feel free to reach out.</p>
+        <p>Email: jacobmbook02@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jacob-book">Jacob Book</a></p>
+      </div>
     </section>
   </div>
 </body>
