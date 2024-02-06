@@ -4,8 +4,165 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jacob Book's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1S1Pml7nL9AmEtH9fvz2NOyjZoKBZKx7BQX5yT+Y0f75iBvXBkSGLZp8fOIyZhCk5Mg5Yc3IcCcnQfeX2OJF4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Reset and General Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      background: linear-gradient(to right, #4c3a6b, #232526);
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-picture {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      animation: rotate 3s linear infinite;
+    }
+
+    .header-content {
+      margin-top: 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 40px;
+      margin: 40px 0;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to right bottom, #dcdde1, #ffffff);
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Project Links Styles */
+    .project-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-links li {
+      margin-bottom: 10px;
+    }
+
+    .project-links li a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-size: 16px;
+    }
+
+    .project-links li a:hover {
+      color: #0056b3;
+    }
+
+    /* Contact Styles */
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: #4c3a6b;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 20px 20px 0 0;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons .icon {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    .social-icons .icon:hover {
+      color: #dcdde1;
+    }
+
+    /* Keyframes */
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -78,7 +235,5 @@
       </div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
