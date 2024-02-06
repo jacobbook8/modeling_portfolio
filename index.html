@@ -56,15 +56,17 @@
 
     .btn {
       padding: 10px 20px;
-      background-color: #007bff;
+      background-color: transparent;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s;
+      border: none;
+      cursor: pointer;
     }
 
     .btn:hover {
-      background-color: #0056b3;
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     /* Section Styles */
@@ -74,6 +76,18 @@
       border-radius: 10px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       background: linear-gradient(to right bottom, #dcdde1, #ffffff);
+      animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     section h2 {
@@ -110,13 +124,34 @@
     .contact-info p {
       margin: 10px 0;
     }
+
+    /* Profile Picture Styles */
+    .profile-picture {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      animation: rotate 3s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
+      <img class="profile-picture" src="assets/headshot.jpg" alt="Profile Picture">
       <h1>Jacob Book</h1>
-      <p>Data Analyst & Statistical Modeler</p>
+      <p>Data Analyst</p>
     </div>
   </header>
 
