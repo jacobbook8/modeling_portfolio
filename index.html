@@ -27,7 +27,7 @@
 
     /* Header Styles */
     header {
-      background: linear-gradient(to right, #4c3a6b, #232526);
+      background: linear-gradient(to right, #ffa500, #ff6347);
       color: #fff;
       text-align: center;
       padding: 50px 0;
@@ -56,7 +56,7 @@
 
     header p {
       font-size: 18px;
-      margin-bottom: 0;
+      margin-bottom: 20px; /* Added margin for spacing */
     }
 
     nav ul {
@@ -88,6 +88,18 @@
       border-radius: 10px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       background: linear-gradient(to right bottom, #dcdde1, #ffffff);
+      animation: slideIn 1s ease; /* Added animation */
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     section h2 {
@@ -128,7 +140,7 @@
 
     /* Footer Styles */
     footer {
-      background: #4c3a6b;
+      background: #ffa500;
       color: #fff;
       text-align: center;
       padding: 20px 0;
@@ -152,7 +164,6 @@
     .social-icons .icon:hover {
       color: #dcdde1;
     }
-
   </style>
 </head>
 <body>
@@ -160,8 +171,8 @@
     <div class="container">
       <img class="profile-picture" src="assets/headshot.jpg" alt="Profile Picture">
       <div class="header-content">
-        <h1>Jacob Book</h1>
-        <p>Data Analyst</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore and learn more about my journey and projects!</p>
         <nav>
           <ul>
             <li><a href="#about">About Me</a></li>
