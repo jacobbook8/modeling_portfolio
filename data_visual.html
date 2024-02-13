@@ -5,41 +5,174 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cool Visuals</title>
   <style>
-    body {
-      font-family: Roboto;
-      background-color: #f4f4f4;
-      padding: 20px;
+    /* Reset and General Styles */
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
     }
 
-    h1 {
-      text-align: center;
-      color: #333;
+    body {
+      font-family: 'Roboto', sans-serif; /* Custom font */
+      line-height: 1.6;
+      background-color: #192C4E; /* Dark blue background */
+      overflow-x: hidden;
+      color: #fff; /* Text color */
+      text-align: center; /* Center align everything */
+    }
+
+    .container {
+      max-width: 800px; /* Narrower container */
+      margin: 50px auto; /* Center the container horizontally */
+      padding: 20px;
+      text-align: left; /* Left align content inside container */
+      position: relative; /* Relative positioning for absolute positioning of profile picture */
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #192C4E; /* Dark blue background */
+      color: #fff;
+      padding: 50px 0;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: left;
+    }
+
+    .profile-picture {
+      position: relative; /* Absolute positioning for precise control */
+      top: 260px; /* Adjust top positioning */
+      left: -200px; /* Adjust left positioning */
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; /* Ensure profile picture stays above the sections */
+    }
+
+    .header-content {
+      margin-top: 20px;
+      text-align: left; /* Align header content to the left */
+      padding-left: 20px; /* Add padding to align content with profile picture */
+    }
+
+    header h1 {
+      font-size: 64px; /* Larger header text */
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+      text-align: left
+    }
+
+    header p {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #7488A9;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 40px;
+      margin: 40px 0;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #1E345A; /* Dark blue background */
+      animation: slideIn 1s ease;
+      position: relative; /* Ensure proper positioning */
+      z-index: 1; /* Lower z-index to slide under profile picture */
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section h2 {
+      font-size: 24px; /* Adjusted heading size */
       margin-bottom: 20px;
     }
 
-    p {
-      text-align: center;
-      color: #555;
+    section p {
+      font-size: 16px;
+      line-height: 1.6;
     }
 
-    .image-container {
-      text-align: center;
-      margin-bottom: 30px;
+    /* Project Links Styles */
+    .project-links {
+      list-style: none;
+      padding: 0;
     }
 
-    .image-container h2 {
-      color: #333;
+    .project-links li {
+      margin-bottom: 10px;
+    }
+
+    .project-links li a {
+      color: #FFA500; /* Orange */
+      text-decoration: none;
+      transition: color 0.3s;
+      font-size: 16px;
+    }
+
+    .project-links li a:hover {
+      color: #FF8C00; /* Darker shade of orange */
+    }
+
+    /* Contact Styles */
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: #192C4E;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 20px 20px 0 0;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    .social-icons {
       margin-top: 10px;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-top: 10px;
+    .social-icons .icon {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    .social-icons .icon:hover {
+      color: #dcdde1;
     }
   </style>
 </head>
