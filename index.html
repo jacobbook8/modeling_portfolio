@@ -23,9 +23,9 @@
 
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 0 auto; /* Center the container horizontally */
       padding: 20px;
-      text-align: center; /* Center align content inside container */
+      text-align: left; /* Left align content inside container */
     }
 
     /* Header Styles */
@@ -38,15 +38,13 @@
     }
 
     .profile-picture {
-      display: block;
-      margin: 0 auto 20px; /* Center the image horizontally and add margin at the bottom */
+      float: left; /* Float the image to the left */
+      margin-right: 20px; /* Add margin to separate from text */
       border-radius: 50%;
       width: 150px;
       height: 150px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
       animation: rotate 3s linear infinite;
-      position: relative; /* Ensure the image stays in front */
-      z-index: 2; /* Ensure the image stays in front */
     }
 
     .header-content {
@@ -175,6 +173,7 @@
 <body>
   <header>
     <div class="container">
+      <img class="profile-picture" src="assets/headshot.jpg" alt="Profile Picture">
       <div class="header-content">
         <h1>Hi, I am Jacob Book</h1>
         <p>Finding new insights.</p>
@@ -192,7 +191,6 @@
 
 
   <div class="container">
-    <img class="profile-picture" src="assets/headshot.jpg" alt="Profile Picture">
     <section id="about">
       <h2>About Me</h2>
       <p>I'm a senior at Wheaton College studying mathematics with an emphasis on statistics and data analysis. I am also getting </p>
