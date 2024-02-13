@@ -26,6 +26,7 @@
       margin: 50px auto; /* Center the container horizontally */
       padding: 20px;
       text-align: left; /* Left align content inside container */
+      position: relative; /* Relative positioning for absolute positioning of profile picture */
     }
 
     /* Header Styles */
@@ -38,13 +39,14 @@
     }
 
     .profile-picture {
-      float: left; /* Float the image to the left */
-      margin-right: 20px; /* Add margin to separate from text */
+      position: absolute; /* Absolute positioning for precise control */
+      top: 20px; /* Adjust top positioning */
+      left: 20px; /* Adjust left positioning */
       border-radius: 50%;
       width: 150px;
       height: 150px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-      z-index: 5; /* Ensure profile picture stays above the containers */
+      z-index: 2; /* Ensure profile picture stays above the sections */
     }
 
     .header-content {
