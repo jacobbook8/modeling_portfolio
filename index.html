@@ -13,7 +13,7 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Roboto', sans-serif; /* Custom font */
       line-height: 1.6;
       background-color: #f8f9fa;
       overflow-x: hidden;
@@ -27,7 +27,7 @@
 
     /* Header Styles */
     header {
-      background: linear-gradient(to right, #192C4E, #D1501F);
+      background-image: radial-gradient(circle at 50% 50%, #FFD700, #FF8C00); /* Radial gradient */
       color: #fff;
       text-align: center;
       padding: 50px 0;
@@ -52,11 +52,12 @@
     header h1 {
       font-size: 36px;
       margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
     }
 
     header p {
       font-size: 18px;
-      margin-bottom: 20px; /* Added margin for spacing */
+      margin-bottom: 20px;
     }
 
     nav ul {
@@ -87,8 +88,8 @@
       margin: 40px 0;
       border-radius: 10px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      background: linear-gradient(to right bottom, #dcdde1, #ffffff);
-      animation: slideIn 1s ease; /* Added animation */
+      background-image: linear-gradient(to right bottom, #f0f8ff, #87cefa); /* Linear gradient */
+      animation: slideIn 1s ease;
     }
 
     @keyframes slideIn {
@@ -165,6 +166,7 @@
       color: #dcdde1;
     }
   </style>
+
 </head>
 <body>
   <header>
